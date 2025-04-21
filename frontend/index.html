@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PO 到 MO 文件转换器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>PO 到 MO 文件转换器</h1>
+        <form id="converter-form">
+            <div class="file-upload">
+                <label for="po-file">选择 PO 文件：</label>
+                <input type="file" id="po-file" accept=".po" required>
+            </div>
+            <button type="submit">转换为 MO 文件</button>
+        </form>
+        <div id="result" class="hidden">
+            <a id="download-link" href="#" download>下载 MO 文件</a>
+        </div>
+        <div id="error" class="hidden"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
