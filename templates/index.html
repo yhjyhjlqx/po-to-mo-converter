@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PO 转 MO 文件在线工具</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>PO 转 MO 文件转换器</h1>
+        <p>上传您的 PO 文件，自动生成 MO 文件</p>
+        
+        <div class="upload-box">
+            <input type="file" id="po-file" accept=".po">
+            <button id="convert-btn">转换</button>
+        </div>
+        
+        <div id="result" class="hidden">
+            <h2>转换完成！</h2>
+            <a id="download-link" download="output.mo">下载 MO 文件</a>
+        </div>
+    </div>
+    
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
